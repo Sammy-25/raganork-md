@@ -29,7 +29,7 @@ module.exports = {
     BLOCK_CHAT: process.env.BLOCK_CHAT || '',
     PM_ANTISPAM: convertToBool(process.env.PM_ANTISPAM) || '',
     ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || true,
-    MANGLISH_CHATBOT: convertToBool(process.env.MANGLISH_CHATBOT) || false,
+    MANGLISH_CHATBOT: convertToBool(process.env.MANGLISH_CHATBOT) || true,
     ADMIN_ACCESS: convertToBool(process.env.ADMIN_ACCESS) || false,
     PLATFORM:isHeroku?"Heroku":isRailway?"Railway":isKoyeb?"Koyeb":"Other server",isHeroku,isKoyeb,isVPS,isRailway,
     AUTOMUTE_MSG: process.env.AUTOMUTE_MSG || '_Group automuted!_\n_(edit AUTOMUTE_MSG)_',
